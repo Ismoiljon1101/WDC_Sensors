@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <a href="introduction_page.html" class="w3-bar-item w3-button">Home</a>
+        <a href="motion.html" class="w3-bar-item w3-button">Motion data</a>
+        <a href="band_power.html" class="w3-bar-item w3-button">Band Power</a>
+        <a href="performatic_matic.html" class="w3-bar-item w3-button">Performatic </a>
+    </div>
+    
+   <!-- Page Content -->
+    <div class="w3-teal" style="justify-content: space-between; display: flex; align-items: center;">
+        
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        <div class="header_faq">
+            <ul style=" display: flex; gap: 25px; align-items: center; list-style: none; margin-right:15px">
+                <a href="profile.html"><li>Profile</li></a>
+                <a href="about_us.html" class="about_us"><li>About Us</li></a>
+                <li>FAQ</li> 
+            </ul>
+        </div>
+        
+     <!--Header content here and style -->
+    </div>
+
+  <script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
+
+
+
+<div class="big_box">
+    <div class="box_container">
+        <div class="box_a">
+            <h1># chart here
+            </h1>
+            <div>
+              <canvas id="myChart" width="300px" height="300px"></canvas>
+            </div>
+        
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        
+            <script>
+              const ctx = document.getElementById('myChart');
+            
+              new Chart(ctx, {
+                type: 'bar',
+                data: {
+                  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple',],
+                  datasets: [{
+                    label: 'LABE IT HERE',
+                    data: [12, 19, 3, 5, 2,],
+                    borderWidth: 5
+                  }]
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                    }
+                  }
+                }
+              });
+              
+            </script>
+
+        </div>
+        <div class="box_b">
+            <h1># Info about chart here </h1>
+        </div>
+    </div>
+</div>
+</body>
+</html>
