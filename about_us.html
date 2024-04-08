@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <a href="introduction_page.html" class="w3-bar-item w3-button">Home</a>
+        <a href="motion.html" class="w3-bar-item w3-button">Motion data</a>
+        <a href="band_power.html" class="w3-bar-item w3-button">Band Power</a>
+        <a href="performatic_matic.html" class="w3-bar-item w3-button">Performatic </a>
+    </div>
+    
+   <!-- Page Content -->
+    <div class="w3-teal" style="justify-content: space-between; display: flex; align-items: center;">
+        
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        <div class="header_faq">
+            <ul style=" display: flex; gap: 25px; align-items: center; list-style: none; margin-right:15px">
+                <li>Profile</li>
+                <li>About us</li>
+                <li>FAQ</li> 
+            </ul>
+        </div>
+        
+     <!--Header content here and style -->
+    </div>
+
+    <script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+    <!-- Main page content-->
+    <div class="teams">
+        <div class="box">
+            <div class="inforgamtion">
+                <h1>Leader (Back End)</h1>
+                <p>type about yourself, I study at Sejong Univerisy In Computer Science department, and I was involved in making this webside back end work and assigning the teach  </p>
+            </div>
+            <div class="image">
+                <img src="src/Sejong_University (1).png" alt="profile picture"/>
+            </div>
+        </div>
+        <hr>
+        <div class="box">
+            <div class="inforgamtion">
+                <h1>Front End, (charts)</h1>
+                <p>type about yourself, I study at Sejong Univerisy In Computer Science department, and I was involved in making this webside back end work and assigning the teach  </p>
+            </p>
+            </div>
+            <div class="image">
+                <img src="src/Sejong_University (1).png" alt="">
+            </div>
+        </div>
+        <hr>
+        <div class="box">
+            <div class="inforgamtion">
+                <h1>Front end (layout, fuctions and design) </h1>
+                <p>I study at Sejong Univeristy in IBBA and CS  major I am 21 y.o and I was responsible for front end (sidebar and overall webpages)</p>, 
+            </div>
+            <div class="image">
+                <img src="src/Sejong_University (1).png" alt="">
+            </div>
+        </div>
+        <hr>
+        <div class="box">
+            <div class="inforgamtion">
+                <h1>name</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quia, blanditiis repudiandae dolores repellat sint, molestiae eius esse labore saepe et suscipit maiores sunt impedit facere officiis quo aspernatur commodi.
+                </p>
+            </div>
+            <div class="image">
+                <img src="src/Sejong_University (1).png" alt="">
+            </div>
+        </div>
+        <hr>
+        <div class="box">
+            <div class="inforgamtion">
+                <h1>name</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quia, blanditiis repudiandae dolores repellat sint, molestiae eius esse labore saepe et suscipit maiores sunt impedit facere officiis quo aspernatur commodi.
+                </p>
+            </div>
+            <div class="image">
+                <img src="src/Sejong_University (1).png" alt="">
+            </div>
+        </div>
+        <hr>
+        <div class="box">
+            <div class="inforgamtion">
+                <h1>name</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quia, blanditiis repudiandae dolores repellat sint, molestiae eius esse labore saepe et suscipit maiores sunt impedit facere officiis quo aspernatur commodi.
+                </p>
+            </div>
+            <div class="image">
+                <img src="src/Sejong_University (1).png" alt="">
+            </div>
+        </div>
+        <hr>
+        <div class="box">
+            <div class="inforgamtion">
+                <h1>name</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quia, blanditiis repudiandae dolores repellat sint, molestiae eius esse labore saepe et suscipit maiores sunt impedit facere officiis quo aspernatur commodi.
+                </p>
+            </div>
+            <div class="image">
+                <img src="src/Sejong_University (1).png" alt="">
+            </div>
+        </div>
+        
+
+
+    </div>
+ 
+ 
+
+</body>
+</html>
