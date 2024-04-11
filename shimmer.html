@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="./script/bandpower.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+<body class="jii">
+<!-- Sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="Cortex_API.html" class="w3-bar-item w3-button">Cortex_API</a>
+    <a href="shimmer.html" class="w3-bar-item w3-button">Shimmer3 EMG Unit</a>
+  </div>
+    
+   <!-- Page Content -->
+    <div class="w3-teal" style="justify-content: space-between; display: flex; align-items: center;">
+        
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        <div class="header_faq">
+            <ul style=" display: flex; gap: 25px; align-items: center; list-style: none; margin-right:15px">
+                <a href="profile.html"><li>Profile</li></a>
+                <a href="about_us.html" class="about_us"><li>About Us</li></a>
+                <li>FAQ</li> 
+            </ul>
+        </div>
+        
+     <!--Header content here and style -->
+    </div>
+
+  <div class="teams">
+        <div class="box">
+            <div class="image">
+                <div class="sellectoor">
+                    <h1>Give information about chart here</h1>
+                    <ul id="select-sensors">
+                      <li>
+                        <input type="checkbox" name="sensors" id="af3" value="af3" checked>
+                        <label for="af3">af3</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="sensors" id="f7" value="f7">
+                        <label for="f7">f7</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="sensors" id="f3" value="f3">
+                        <label for="f3">f3</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="sensors" id="fc5" value="fc5">
+                        <label for="fc5">fc5</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="sensors" id="t7" value="t7">
+                        <label for="t7">t7</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="sensors" id="p7" value="p7">
+                        <label for="p7">p7</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="sensors" id="o1" value="o1">
+                        <label for="o1">o1</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="sensors" id="o2" value="o2">
+                        <label for="o2">o2</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="sensors" id="p8" value="p8">
+                        <label for="p8">p8</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="sensors" id="t8" value="t8">
+                        <label for="t8">t8</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="sensors" id="fc6" value="fc6">
+                        <label for="fc6">fc6</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="sensors" id="f4" value="f4">
+                        <label for="f4">f4</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="sensors" id="f8" value="f8">
+                        <label for="f8">f8</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="sensors" id="af4" value="af4">
+                        <label for="af4">af4</label>
+                      </li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <div class="sellectors"></div>
+                    <div>
+                      <canvas id="myChart" width="300px" height="300px"></canvas>
+                    </div>
+                
+                      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                  
+                      <script>
+                        const ctx = document.getElementById('myChart');
+                      
+                        new Chart(ctx, {
+                          type: 'pie',
+                          data: {
+                            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple',],
+                            datasets: [{
+                              label: 'LABE IT HERE',
+                              data: [12, 19, 3, 5, 2,],
+                              borderWidth: 5
+                            }]
+                          },
+                          options: {
+                            scales: {
+                              y: {
+                                beginAtZero: true
+                              }
+                            }
+                          }
+                        });
+                        
+                      </script>
+                    
+
+                </div>
+            </div>
+        </div>
+  </div>
+
+  <div class="teams">
+    <div class="box">
+        <div class="image">
+            <div class="sellectoor">
+                <h1>Give information about chart here</h1>
+                <ul id="select-sensors">
+                  <li>
+                    <input type="checkbox" name="sensors" id="af3" value="af3" checked>
+                    <label for="af3">af3</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="sensors" id="f7" value="f7">
+                    <label for="f7">f7</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="sensors" id="f3" value="f3">
+                    <label for="f3">f3</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="sensors" id="fc5" value="fc5">
+                    <label for="fc5">fc5</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="sensors" id="t7" value="t7">
+                    <label for="t7">t7</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="sensors" id="p7" value="p7">
+                    <label for="p7">p7</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="sensors" id="o1" value="o1">
+                    <label for="o1">o1</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="sensors" id="o2" value="o2">
+                    <label for="o2">o2</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="sensors" id="p8" value="p8">
+                    <label for="p8">p8</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="sensors" id="t8" value="t8">
+                    <label for="t8">t8</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="sensors" id="fc6" value="fc6">
+                    <label for="fc6">fc6</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="sensors" id="f4" value="f4">
+                    <label for="f4">f4</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="sensors" id="f8" value="f8">
+                    <label for="f8">f8</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="sensors" id="af4" value="af4">
+                    <label for="af4">af4</label>
+                  </li>
+                </ul>
+            </div>
+            <div class="image">
+                <div class="sellectors"></div>
+                <div>
+                  <canvas id="line" width="300px" height="300px"></canvas>
+                </div>
+            
+                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              
+                  <script>
+                    const ctx = document.getElementById('line');
+                  
+                    new Chart(ctx, {
+                      type: 'line',
+                      data: {
+                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple',],
+                        datasets: [{
+                          label: 'LABE IT HERE',
+                          data: [12, 19, 3, 5, 2,],
+                          borderWidth: 5
+                        }]
+                      },
+                      options: {
+                        scales: {
+                          y: {
+                            beginAtZero: true
+                          }
+                        }
+                      }
+                    });
+                    
+                  </script>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+  }
+
+  function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+  }
+</script>
+
+<footer>
+  <div class="footer">
+  <div class="row">
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="#"><i class="fa fa-instagram"></i></a>
+  <a href="#"><i class="fa fa-youtube"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  </div>
+  
+  <div class="row">
+  <ul>
+  <li><a href="#">Contact us</a></li>
+  <li><a href="#">Our Services</a></li>
+  <li><a href="#">Privacy Policy</a></li>
+  <li><a href="#">Terms & Conditions</a></li>
+  <li><a href="#">Career</a></li>
+  </ul>
+  </div>
+  
+  <div class="row">
+  Copyright © 2024 Sejong University Computer Science Department - All rights reserved || Designed By: Ismail 
+  </div>
+  </div>
+  </footer>
+</body>
+</html>
