@@ -25,10 +25,13 @@ a{
 /* Style the header with a grey background and some padding */
 .header {
     overflow: hidden;
-    background-color: #109487;
+    background-color: white;
     padding: 20px 10px;
   }
-  
+  #header{
+
+    background-color: white;
+  }
   /* Style the header links */
   .header a {
     float: left;
@@ -65,7 +68,7 @@ a{
   }
   
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-  @media screen and (max-width: 500px) {
+  /*@media screen and (max-width: 500px) {
     .header a {
       float: none;
       display: block;
@@ -103,5 +106,55 @@ a{
     padding: 20px;
     border: 1px solid black;
 }
+ */
+ .teams{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
 
+ }
+ .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+ }
+ .inforgamtion, .image{
+   
+
+   height: 40vh;
+   width: 50%;
+   
+   padding: 10px;
+   margin: 10px;
+ }
+ .image{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .inforgamtion{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ 
   
+
+ }
+ h1, p{
+
+  text-align: center;
+
+ }
+
+img{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/*footer here */
