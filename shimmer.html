@@ -6,6 +6,9 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script defer src="./script//gsr.js"></script> -->
+    <script defer src="./script/ppg.js"></script>
 </head>
 <body>
 <!-- Sidebar -->
@@ -51,35 +54,15 @@
             <h1># chart here
             </h1>
             <div>
-              <canvas id="myChart" width="300px" height="300px"></canvas>
+              <canvas id="gsr" width="300px" height="300px"></canvas>
             </div>
-        
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        
-            <script>
-              const ctx = document.getElementById('myChart');
-            
-              new Chart(ctx, {
-                type: 'line',
-                data: {
-                  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple',],
-                  datasets: [{
-                    label: 'LABE IT HERE',
-                    data: [12, 19, 3, 5, 2,],
-                    borderWidth: 5
-                  }]
-                },
-                options: {
-                  scales: {
-                    y: {
-                      beginAtZero: true
-                    }
-                  }
-                }
-              });
-              
-            </script>
-
+        </div>
+        <div class="box_a">
+            <h1># chart here
+            </h1>
+            <div>
+              <canvas id="ppg" width="300px" height="300px"></canvas>
+            </div>
         </div>
         <div class="box_b">
             <h1># Info about chart here </h1>
