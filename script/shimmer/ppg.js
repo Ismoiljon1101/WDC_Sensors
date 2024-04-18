@@ -1,3 +1,5 @@
+(()=>{
+
 // import { Chart } from "chart.js/auto";
 
 const WEBSOCKET_URL = "wss://ws.bitmex.com/realtime";
@@ -14,7 +16,7 @@ let socket = null;
 // chart
 ////////////////////////////////////////////////////////////////////////////////
 const createChart = ()=>{
-    const canvas = document.querySelector("#ppg");
+    const canvas = document.querySelector("#ppg canvas");
     myChart = new Chart(canvas, {
         type: "line",
         data: {
@@ -113,3 +115,5 @@ const destroyAll = ()=>{
 // Activate
 ////////////////////////////////////////////////////////////////////////////////
 createAll();
+
+})();

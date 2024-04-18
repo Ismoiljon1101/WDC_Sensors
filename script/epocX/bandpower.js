@@ -1,3 +1,5 @@
+(()=>{
+
 // import { Chart } from "chart.js/auto";
 
 const WEBSOCKET_URL = "wss://ws.bitmex.com/realtime";
@@ -11,7 +13,7 @@ let socket = null;
 ////////////////////////////////////////////////////////////////////////////////
 const updateSelectedSensors = (e)=>{
     const beforeNumOfSensors = selectedSensors.length;
-    const checkboxes = document.querySelectorAll(`input[type=checkbox]`);
+    const checkboxes = document.querySelectorAll(`#bandpower #select-sensors input[type=checkbox]`);
     const newSelectedSensors = [];
 
     checkboxes.forEach((checkbox)=>{
@@ -34,13 +36,13 @@ const updateSelectedSensors = (e)=>{
     console.log("selectedSensors", selectedSensors);
 };
 const attachEventListeners = ()=>{
-    const checkboxes = document.querySelectorAll("#select-sensors input[type=checkbox]");
+    const checkboxes = document.querySelectorAll("#bandpower #select-sensors input[type=checkbox]");
     checkboxes.forEach((checkbox)=>{
         checkbox.addEventListener('change', updateSelectedSensors);
     });
 };
 const removeEventListeners = ()=>{
-    const checkboxes = document.querySelectorAll("#select-sensors input[type=checkbox]");
+    const checkboxes = document.querySelectorAll("#bandpower #select-sensors input[type=checkbox]");
     checkboxes.forEach((checkbox)=>{
         checkbox.removeEventListener('change', updateSelectedSensors);
     });
@@ -52,7 +54,7 @@ const removeEventListeners = ()=>{
 // chart
 ////////////////////////////////////////////////////////////////////////////////
 const createChart = ()=>{
-    const canvas = document.querySelector("#bandpower");
+    const canvas = document.querySelector("#bandpower canvas");
     myChart = new Chart(canvas, {
         type: "bar",
         data: {
@@ -174,3 +176,5 @@ const destroyAll = ()=>{
 // Activate
 ////////////////////////////////////////////////////////////////////////////////
 createAll();
+
+})();
