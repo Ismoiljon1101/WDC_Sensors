@@ -1,75 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
-    
-    <link rel="stylesheet" href="style.css">
-    
-    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-    <script defer src="./script/layout.js"></script>
-</head>
-<body class="jii">
-    <!-- Page Content -->
-    <header class="w3-teal" style="justify-content: space-between; display: flex; align-items: center;">
-        <button class="w3-button w3-teal w3-xlarge toggle-sidebar-btn">☰</button>
-        <div class="header_faq">
-            <ul style=" display: flex; gap: 25px; align-items: center; list-style: none; margin-right:15px">
-                <a href="profile.html"><li>Profile</li></a>
-                <a href="about_us.html" class="about_us"><li>About Us</li></a>
-                <li>FAQ</li> 
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Header is below: CLean code, do not mess it up!-->
+    <header class="header-footer">
+      <div class="head-left">
+        <div class="side-toggle">
+          <button class="hamburger">
+            <a><img src="public/images/sidebar.png" alt="" /></a>
+          </button>
         </div>
+        <div class="dark-mode-button">
+          <button id="toggle-button">
+            <img src="public/images/day-and-night.png" alt="dark-mode-button" />
+          </button>
+        </div>
+      </div>
+
+      <div class="head-right">
+        <a href="index.html"> Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <a href="#">Home</a>
+          <a href="#">Cortex</a>
+          <a href="#">Shimmer</a>
+          <div class="CloseBTN">&times;</div>
+        </ul>
+      </div>
     </header>
-    <!-- Sidebar -->
-    <aside class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-        <button type="button" class="w3-bar-item w3-large toggle-sidebar-btn">Close &times;</button>
-        <button type="button" id="btn-index" href="./index.html" class="w3-bar-item w3-button">Home</button>
-        <button type="button" id="btn-epocX" href="./epocX.html" class="w3-bar-item w3-button">EPOC-X</button>
-        <button type="button" id="btn-shimmer" href="./shimmer.html" class="w3-bar-item w3-button">Shimmer3 EMG Unit</button>
-    </aside>
-
-    <div class="big_box">
-        <div class="box_container">
-            <div class="box_a">
-                <h1># chart here</h1>
-            </div>
-            <div class="box_b">
-                <h1># Info about chart here </h1>
-            </div>
+    <!--Main content is here below: Do not mess the Code UP!-->
+    <main id="main-content">
+      <div class="big-box">
+        <div class="small-box">
+          <h1>Intruduction here</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+            laborum quis aliquam doloremque ratione ipsam iusto tenetur nihil
+            odit accusamus.
+          </p>
         </div>
-    </div>
-
-    <footer>
-        <div class="footer">
-            <div class="row">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-youtube"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-            </div>
-            <div class="row">
-                <ul>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Career</a></li>
-                </ul>
-            </div>
-            <div class="row">
-                Copyright © 2024 Sejong University Computer Science Department - All rights reserved || Designed By: Ismail 
-            </div>
+        <div class="small-box">
+          <h1>hello</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+            laborum quis aliquam doloremque ratione ipsam iusto tenetur nihil
+            odit accusamus.
+          </p>
         </div>
+      </div>
+
+      <div class="big-box">
+        <div class="small-box">
+          <h1>Intruduction here</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+            laborum quis aliquam doloremque ratione ipsam iusto tenetur nihil
+            odit accusamus.
+          </p>
+        </div>
+        <div class="small-box">
+          <h1>hello</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+            laborum quis aliquam doloremque ratione ipsam iusto tenetur nihil
+            odit accusamus.
+          </p>
+        </div>
+      </div>
+
+      <div class="big-box">
+        <div class="small-box">
+          <h1>hello</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+            laborum quis aliquam doloremque ratione ipsam iusto tenetur nihil
+            odit accusamus.
+          </p>
+        </div>
+        <div class="small-box">
+          <h1>hello</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+            laborum quis aliquam doloremque ratione ipsam iusto tenetur nihil
+            odit accusamus.
+          </p>
+        </div>
+      </div>
+    </main>
+    <!--Footer is here below-->
+
+    <footer class="header-footer">
+      <div class="footer-container">
+        <div class="contact-info">
+          <a
+            href="https://www.google.com/maps/dir/37.5451357,127.0879195/sejong+university+address/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x357ca4d0720eecc1:0x1a7ad975c6b5e4eb!2m2!1d127.0736345!2d37.5518018!3e3?entry=ttu"
+            ><p>
+              Sejong University, 세종대학교 209 Neungdong-ro, Gwangjin-gu,
+              Seoul, South Korea
+            </p></a
+          >
+          <p>Phone: 02-3408-3114</p>
+          <p>Email: webmaster@sejong.ac.kr</p>
+        </div>
+        <div class="quick-links">
+          <ul>
+            <li><a href="/about_us.html">About Us</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <!--TODO 
+        1. Have to add social media links here to hrefs of each anchor elements
+        -->
+        <div id="social-media">
+          <a class="links" href="#"
+            ><i class="fab fa-facebook"><img src="public/images/discord.png" alt="" /></i
+          ></a>
+          <a class="links" href=""
+            ><i class="fab fa-facebook"><img src="public/images/github.png" alt="" /></i
+          ></a>
+          <a class="links" href=""
+            ><i class="fab fa-facebook"
+              ><img src="public/images/instagram.png" alt="" /></i
+          ></a>
+          <a class="links" href=""
+            ><i class="fab fa-facebook"><img src="public/images/twitter.png" alt="" /></i
+          ></a>
+          <a class="links" href=""
+            ><i class="fab fa-facebook"><img src="public/images/youtube.png" alt="" /></i
+          ></a>
+
+          <!-- Add more social media icons as needed -->
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          &copy; 2024 Sejong University. All Rights Reserved. Computer Science
+          Department, Web Development
+        </p>
+      </div>
     </footer>
-</body>
+
+    <script src="script/script.js"></script>
+    <script src="script/sidebar.js"></script>
+  </body>
 </html>
