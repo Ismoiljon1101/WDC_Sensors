@@ -1,0 +1,13 @@
+<!-- sidebar.component.html -->
+<div class="sidebar m-0 p-0" [class.collapsed]="isSidebarExpanded">
+    <div class="menu">
+        <button (click)="toggleSidebar()"><i class="bi bi-list"></i></button>
+        <br>
+        <button (click)="navigateTo('home')"> <i class="bi bi-bar-chart"></i> <span *ngIf="!isSidebarExpanded">EPOC
+                X</span></button>
+        <button (click)="navigateTo('profile')"> <i class="bi bi-window-stack"></i> <span
+                *ngIf="!isSidebarExpanded">Shimmer</span></button>
+        <!-- Add more buttons or navigation links here -->
+    </div>
+    <!-- Other sidebar content... -->
+</div>

@@ -1,0 +1,38 @@
+/* styles.css or app.component.css */
+
+.body-container {
+    margin: 0 0;
+}
+
+.main-content {
+    width: 100%;
+}
+
+.main-sub-content{
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+    border: 1px solid blue;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* sidebar.component.css */
+.sidebar {
+    /* Your sidebar styles... */
+    transition: width 0.3s ease;
+    /* Add a transition effect */
+}
+
+.sidebar.collapsed {
+    width: 60px;
+    /* Set the collapsed width */
+}

@@ -1,0 +1,27 @@
+<div class="container-fluid m-0 p-0" [ngClass]="isDarkMode ? 'dark-mode' : 'light-mode'">
+  <div class="row m-0 p-0">
+
+    <div class="col-md-1 m-0 p-0">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-md-11 m-0 p-0">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand"></a>
+          <div class="d-flex">
+            <button class="btn btn-outline-success border-0">About us</button>
+            <button class="btn btn-outline-success border-0">Profile</button>
+            <button (click)="changeTheme()" *ngIf="!isDarkMode" class="btn border-0"><i class="bi bi-sun"></i></button>
+            <button (click)="changeTheme()" *ngIf="isDarkMode" class="btn border-0"><i
+                class="bi bi-moon-stars-fill text-white"></i></button>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="main-sub-content">
+          MAIN contents
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
